@@ -6,6 +6,6 @@ Route::get('/', function () {
     return view('index');
 });
 
-// Route::get('/halamanbeli', function () {
-//     return view('halamanbeli');
-// });
+Route::get('/halamanbeli', function () {
+    return view('halamanbeli');
+});
