@@ -131,14 +131,13 @@
   <!-- Footer -->
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <!-- MDB -->
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"
-  ></script>
+        <!-- MDB -->
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"
+        ></script>
 
-  <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/aos.js"></script>
 		<script src="js/navbar.js"></script>
@@ -147,6 +146,48 @@
 		<script src="js/flatpickr.js"></script>
 		<script src="js/glightbox.min.js"></script>
 		<script src="js/custom.js"></script>
+
+        <script src="js1/jquery-3.4.1.min.js"></script>
+        <script src="js1/popper.min.js"></script>
+        <script src="js1/bootstrap.min.js"></script>
+        <script src="js1/owl.carousel.min.js"></script>
+        <script src="js1/jquery.animateNumber.min.js"></script>
+        <script src="js1/jquery.waypoints.min.js"></script>
+        <script src="js1/jquery.fancybox.min.js"></script>
+        <script src="js1/aos.js"></script>
+        <script src="js1/moment.min.js"></script>
+        <script src="js1/daterangepicker.js"></script>
+
+        <script src="js1/typed.js"></script>
+        <script>
+            $(function() {
+                var slides = $('.slides'),
+                images = slides.find('img');
+
+                images.each(function(i) {
+                    $(this).attr('data-id', i + 1);
+                })
+
+                var typed = new Typed('.typed-words', {
+                    strings: ["San Francisco."," Paris."," New Zealand.", " Maui.", " London."],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true,
+                    preStringTyped: (arrayPos, self) => {
+                        arrayPos++;
+                        console.log(arrayPos);
+                        $('.slides img').removeClass('active');
+                        $('.slides img[data-id="'+arrayPos+'"]').addClass('active');
+                    }
+
+                });
+            })
+        </script>
+
+        <script src="js1/custom.js"></script>
 
 </body>
 

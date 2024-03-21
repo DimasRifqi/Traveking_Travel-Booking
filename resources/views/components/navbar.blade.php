@@ -26,6 +26,15 @@
     <link rel="stylesheet" href="css/glightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="css1/bootstrap.min.css">
+	<link rel="stylesheet" href="css1/owl.carousel.min.css">
+	<link rel="stylesheet" href="css1/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css1/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="css1/daterangepicker.css">
+	<link rel="stylesheet" href="css1/aos.css">
+	<link rel="stylesheet" href="css1/style.css">
+
     <title>Index</title>
 
     <style>

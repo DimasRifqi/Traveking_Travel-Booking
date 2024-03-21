@@ -1,8 +1,7 @@
 @include('components/navbar')
 
-<header>
 
-
+    {{-- Header --}}
     <div class="hero overlay">
 
         <div class="img-bg rellax">
@@ -30,12 +29,15 @@
             </div>
         </div>
     </div>
+     {{-- Header --}}
 
+
+     {{-- Sweet Memories --}}
     <div class="section">
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-up">
-                    <img src="img/FotoIndex/Hutan.jpg" alt="Image" class="img-fluid">
+                    <img src="img/FotoIndex/snow.jpg" alt="Image" class="img-fluid">
                 </div>
                 <div class="col-lg-5 order-lg-2" data-aos="fade-up" data-aos-delay="100">
                     <h2 class="heading mb-4">Sweet Memories Come To Life Again</h2>
@@ -46,8 +48,87 @@
             </div>
         </div>
     </div>
+     {{-- Sweet Memories --}}
 
 
+     {{-- Popular Destination --}}
+     <div class="untree_co-section">
+		<div class="container">
+			<div class="row text-center justify-content-center mb-5">
+				<div class="col-lg-7"><h2 class="section-title text-center">Popular Destination</h2></div>
+			</div>
+
+			<div class="owl-carousel owl-3-slider">
+
+				<div class="item">
+					<a class="media-thumb" href="img/FotoIndex/Hutan.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>Pragser Wildsee</h3>
+							<span class="location">Italy</span>
+						</div>
+						<img src="img/FotoIndex/Hutan.jpg" alt="Image" class="img-fluid">
+					</a>
+				</div>
+
+				<div class="item">
+					<a class="media-thumb" href="img/FotoIndex/Hutan.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>Oia</h3>
+							<span class="location">Greece</span>
+						</div>
+						<img src="img/FotoIndex/Hutan.jpg" alt="Image" class="img-fluid">
+					</a>
+				</div>
+
+				<div class="item">
+					<a class="media-thumb" href="img/FotoIndex/Hutan.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>Perhentian Islands</h3>
+							<span class="location">Malaysia</span>
+						</div>
+						<img src="img/FotoIndex/Hutan.jpg" alt="Image" class="img-fluid">
+					</a>
+				</div>
+
+
+				<div class="item">
+					<a class="media-thumb" href="img/FotoIndex/Hutan.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>Rialto Bridge</h3>
+							<span class="location">Italy</span>
+						</div>
+						<img src="img/FotoIndex/Hutan.jpg" alt="Image" class="img-fluid">
+					</a>
+				</div>
+
+				<div class="item">
+					<a class="media-thumb" href="images/hero-slider-5.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>San Francisco, United States</h3>
+							<span class="location">United States</span>
+						</div>
+						<img src="img/FotoIndex/Hutan.jpg" alt="Image" class="img-fluid">
+					</a>
+				</div>
+
+				<div class="item">
+					<a class="media-thumb" href="img/FotoIndex/Hutan.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>Lake Thun</h3>
+							<span class="location">Switzerland</span>
+						</div>
+						<img src="img/FotoIndex/Hutan.jpg" alt="Image" class="img-fluid">
+					</a>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+     {{-- Popular Destination --}}
+
+
+     {{-- card --}}
     <div class="container mt-5 mb-5">
         <div class="row">
             <div class="col">
@@ -184,29 +265,8 @@
             </div>
         </div>
     </div>
+    {{-- card --}}
 
-    <div class="container">
-        <div class="row">
-            <div class="col">
-
-            </div>
-        </div>
-    </div>
-
-    <section class="projects-section bg-light" id="projects">
-        <div class="container px-4 px-lg-5">
-            <!-- Featured Project Row-->
-            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
-                <div class="col-xl-4 col-lg-5">
-                    <div class="featured-text text-center text-lg-left">
-                        <h4>Shoreline</h4>
-                        <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 @include('components/footer')
